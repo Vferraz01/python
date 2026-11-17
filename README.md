@@ -1,4 +1,4 @@
-# Trilha: de Assistente Administrativo a Engenheiro(a) de IA
+# Trilha: Engenheiro(a) de IA
 
 Repositório de estudos em Python, do zero até IA aplicada.
 Ritmo planejado: **4 horas por dia**.
