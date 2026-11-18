@@ -16,7 +16,11 @@ Instruções:
 # Exemplo: soma(2, 3) -> 5
 # ---------------------------------------------------------------------------
 def soma(a, b):
-    pass
+
+    soma = a + b
+    
+    return soma
+
 
 
 # ---------------------------------------------------------------------------
@@ -25,7 +29,10 @@ def soma(a, b):
 # Exemplo: area_retangulo(4, 5) -> 20
 # ---------------------------------------------------------------------------
 def area_retangulo(base, altura):
-    pass
+
+    area = base * altura
+
+    return area
 
 
 # ---------------------------------------------------------------------------
@@ -35,7 +42,10 @@ def area_retangulo(base, altura):
 # Cuidado com a ordem das operações!
 # ---------------------------------------------------------------------------
 def media(nota1, nota2, nota3):
-    pass
+
+    media = (nota1 + nota2 + nota3) / 3
+
+    return media
 
 
 # ---------------------------------------------------------------------------
@@ -44,7 +54,10 @@ def media(nota1, nota2, nota3):
 # Exemplo: celsius_para_fahrenheit(100) -> 212.0
 # ---------------------------------------------------------------------------
 def celsius_para_fahrenheit(celsius):
-    pass
+
+    fahrenheit = celsius * 9 / 5 + 32
+
+    return fahrenheit
 
 
 # ---------------------------------------------------------------------------
@@ -53,7 +66,10 @@ def celsius_para_fahrenheit(celsius):
 # Exemplo: saudacao("Ana") -> "Olá, Ana!"
 # ---------------------------------------------------------------------------
 def saudacao(nome):
-    pass
+
+    saudacao = f"Olá, {nome}!"
+
+    return saudacao
 
 
 # ---------------------------------------------------------------------------
@@ -63,7 +79,9 @@ def saudacao(nome):
 # Dica: qual operador da tabela dá o "resto"? Resto da divisão por quanto?
 # ---------------------------------------------------------------------------
 def ultimo_digito(numero):
-    pass
+
+    return numero % 10
+
 
 
 # ---------------------------------------------------------------------------
