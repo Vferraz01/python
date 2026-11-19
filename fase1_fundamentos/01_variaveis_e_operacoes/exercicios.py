@@ -90,7 +90,8 @@ def ultimo_digito(numero):
 # Exemplo: formatar_preco(5) -> "R$ 5.00"
 # ---------------------------------------------------------------------------
 def formatar_preco(valor):
-    pass
+
+    return f"R$ {valor:.2f}"
 
 
 # ---------------------------------------------------------------------------
@@ -100,7 +101,11 @@ def formatar_preco(valor):
 # Exemplo: aplicar_desconto(200, 15) -> 170.0   (15% de 200 é 30)
 # ---------------------------------------------------------------------------
 def aplicar_desconto(preco, percentual):
-    pass
+
+    desconto = preco * (percentual / 100)
+    preco_final = preco - desconto
+
+    return round(preco_final, 2)
 
 
 # ---------------------------------------------------------------------------
@@ -113,7 +118,11 @@ def aplicar_desconto(preco, percentual):
 # Dica: use // e %.
 # ---------------------------------------------------------------------------
 def converter_minutos(total_minutos):
-    pass
+
+    horas = total_minutos // 60
+    minutos = total_minutos % 60
+
+    return f"{horas}h {minutos}min"
 
 
 # ---------------------------------------------------------------------------
@@ -125,7 +134,13 @@ def converter_minutos(total_minutos):
 #   (160 * 20 = 3200 normais; hora extra = 30; 10 * 30 = 300; total 3500)
 # ---------------------------------------------------------------------------
 def pagamento(valor_hora, horas_normais, horas_extras):
-    pass
+
+    valor_hora_extra = valor_hora * 1.5
+    total_horas_normais = valor_hora * horas_normais
+    total_horas_extras = valor_hora_extra *  horas_extras
+    total = total_horas_normais + total_horas_extras
+
+    return round(total, 2)
 
 
 # ---------------------------------------------------------------------------
@@ -138,4 +153,15 @@ def pagamento(valor_hora, horas_normais, horas_extras):
 # Dica: depois de calcular as notas de 100, quanto ainda falta pagar?
 # ---------------------------------------------------------------------------
 def caixa_eletronico(valor):
-    pass
+
+    notas_100 = valor // 100
+    resto_100 = valor % 100
+
+    notas_50 = resto_100 // 50
+    resto_50 = resto_100 % 50
+
+    notas_10 = resto_50 // 10
+    resto_10 = resto_50 % 10
+
+    return f"100: {notas_100} | 50: {notas_50} | 10: {notas_10} | resto: {resto_10}"
+
