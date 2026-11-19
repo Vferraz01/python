@@ -59,7 +59,7 @@ Quando terminar um módulo (ou travar em algum exercício), faça commit e me pe
 
 ### Fase 1: Fundamentos
 
-- [ ] 01: Variáveis e operações
+- [x] 01: Variáveis e operações
 - [ ] 02: Condicionais (`if`/`elif`/`else`)
 - [ ] 03: Laços (`for`/`while`)
 - [ ] 04: Funções
